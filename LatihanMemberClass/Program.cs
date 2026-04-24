@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,8 +22,11 @@ namespace LatihanMemberClass
             tiket1.Currency = "USD";
             tiket2.Currency = "IDR";
 
-            Console.WriteLine("Origin: {0}", tiket1.Origin);
-            Console.WriteLine("Destination: {0}", tiket1.Destination);
+            tiket1.PrintSummary();
+            Console.WriteLine("Convert to Rupiah: {0}", tiket1.Cost * 15000);
+            Console.WriteLine();
+            tiket2.PrintSummary();
+            Console.WriteLine("Convert to Dollar: {0}", tiket2.Cost / 15000);
 
         }
     }
