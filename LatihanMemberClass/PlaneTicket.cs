@@ -38,8 +38,7 @@ namespace LatihanMemberClass
         {
             Console.WriteLine("Origin: {0}", Origin);
             Console.WriteLine("Destination: {0}", Destination);
-            Console.WriteLine("Cost: {0}", Cost);
-            Console.WriteLine("Convert to: {0}", Currency);
+            Console.WriteLine("Cost: {0} ({1})", Cost, Currency);
         }
     }
     
